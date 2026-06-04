@@ -493,14 +493,13 @@ body{
 .footer{
     position: relative;
     background-color: #10451dff;
-    animation: subir 5s ease-out;
-    animation-timeline: view();
-    animation-range: entry 0% entry 50%;
 }
 
 .titulo-footer{
     text-align: center;
-    animation: descer 1s ease-out;
+    animation: cardsmovimentoesquerda 1s ease-out;
+    animation-timeline: view();
+    animation-range: entry 0% entry 100%;
     margin-top: 5rem;
 }
 
@@ -511,6 +510,8 @@ body{
     margin-right: 5rem;
     margin-top: 6rem;
     animation: cardsmovimentodireita 1s ease-out;
+    animation-timeline: view();
+    animation-range: entry 0% entry 200%;
     border: 2px solid rgba(0, 0, 0, 0.5);
     border-radius: 20px 0 20px 0;
 }
@@ -525,6 +526,7 @@ body{
     margin-top: 0;
     display: block;
     text-align: center;
+    animation: none;
 }
 
 .desenvolvedores-footer{
@@ -541,6 +543,8 @@ body{
     border-radius: 20px 0 20px 0;
     padding: 1rem;
     animation: cardsmovimentoesquerda 1s ease-out;
+    animation-timeline: view();
+    animation-range: entry 0% entry 100%
 }
 
 .referencias-texto{
@@ -556,6 +560,8 @@ body{
     border-radius: 20px 0 20px 0;
     padding: 1rem;
     animation: subir 1s ease-out;
+    animation-timeline: view();
+    animation-range: entry 0% entry 100%
 
 }
 
