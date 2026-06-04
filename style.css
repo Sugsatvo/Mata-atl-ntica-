@@ -201,6 +201,9 @@ body{
 
 .ecossistemas-titulo{
     margin-top: 3rem;
+    animation: aparecer 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% entry 400%
 }
 .card {
     position: relative;
@@ -312,6 +315,9 @@ body{
 .titulo-fauna-flora{
     margin-top: 3rem;
     text-align: center;
+    animation: aparecer 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% entry 400%
 }
 #card-fauna{
     background-image: url(imagens/cardfauna.png);
@@ -440,9 +446,9 @@ body{
 
 .titulo-como-recuperar{
     margin-top: 2rem;
-    animation: cardsmovimentoesquerda 2s ease-out;
+    animation: aparecer 2s ease-in-out;
     animation-timeline: view();
-    animation-range: entry 0% entry 80%
+    animation-range: entry 0% entry 400%
 }
 
 #como-recuperar{
@@ -512,8 +518,8 @@ body{
     animation: cardsmovimentodireita 1s ease-out;
     animation-timeline: view();
     animation-range: entry 0% entry 200%;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    border-radius: 20px 0 20px 0;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
 }
 
 @keyframes subir{
@@ -539,8 +545,8 @@ body{
     bottom: 5%;
     left: 5%;
     width: 40%;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    border-radius: 20px 0 20px 0;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
     padding: 1rem;
     animation: cardsmovimentoesquerda 1s ease-out;
     animation-timeline: view();
@@ -556,8 +562,8 @@ body{
     bottom: 5%;
     right: 5%;
     width: 40%;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    border-radius: 20px 0 20px 0;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
     padding: 1rem;
     animation: subir 1s ease-out;
     animation-timeline: view();
