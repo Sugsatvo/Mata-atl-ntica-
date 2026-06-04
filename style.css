@@ -4,6 +4,11 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: #f0fff1;
+    border-left: 15px solid #004000;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +19,6 @@ html{
     width: 100%;
     min-height: 100vh;
     background-color: #f0fff1; 
-    border-left: 15px solid #004000;
     display: flex;
     scroll-snap-align: start;
 }
@@ -141,7 +145,7 @@ html{
     font-family: "Six Caps", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #004000
+    color: #004000;
 }
 
 .areas-conteudo {
@@ -294,7 +298,6 @@ html{
 
 .textos-card{
     text-align: left;
-    font-size: clamp(5px, 2vw, 20px);
 }
 .bio-titulo{
     margin-top: 5rem;
@@ -383,9 +386,9 @@ html{
 .textos-fatores-prejudiciais{
     margin-top: 2rem;
     text-align: justify;
-    animation: cardsmovimentoesquerda 2s ease-in-out;
+    animation: cardsmovimentoesquerda 5s ease-out;
     animation-timeline: view();
-    animation-range: entry 0% entry 100%
+    animation-range: entry 0% entry 80%
 }
 
 
@@ -485,4 +488,79 @@ html{
 
 .cards-recuperar{
     width: 30%;
+}
+
+.footer{
+    position: relative;
+    background-color: #10451dff;
+    animation: subir 5s ease-out;
+    animation-timeline: view();
+    animation-range: entry 0% entry 50%;
+}
+
+.titulo-footer{
+    text-align: center;
+    animation: descer 1s ease-out;
+    margin-top: 5rem;
+}
+
+.footer-conteudo{
+    gap: 2rem;
+    width: 40%;
+    max-height: 400px;
+    margin-right: 5rem;
+    margin-top: 6rem;
+    animation: cardsmovimentodireita 1s ease-out;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px 0 20px 0;
+}
+
+@keyframes subir{
+    from{transform: translateY(300%);}
+}
+
+.subtitulo-footer{
+    font-size: clamp(80px, 8vw, 120px);
+    color: #1a7431ff;
+    margin-top: 0;
+    display: block;
+    text-align: center;
+}
+
+.desenvolvedores-footer{
+   margin-bottom: 1rem;
+   text-align: center;
+}
+
+.referencias{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 40%;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px 0 20px 0;
+    padding: 1rem;
+    animation: cardsmovimentoesquerda 1s ease-out;
+}
+
+.referencias-texto{
+    margin-top: 1rem;
+}
+
+.ongs{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 40%;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px 0 20px 0;
+    padding: 1rem;
+    animation: subir 1s ease-out;
+
+}
+
+.links{
+    color: #f0fff1;
+    text-decoration: none;
+    z-index: 9999;
 }
