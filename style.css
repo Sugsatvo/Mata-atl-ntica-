@@ -94,7 +94,7 @@ body{
 
 /* Dim active pill when hovering a different button */
 .navbar:has(.nav-botao:hover) .onde-estamos:not(:hover)::before {
-    opacity: 0.35;
+    opacity: 0.10;
     transform: scale(0.9);
 }
 
