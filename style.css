@@ -576,3 +576,8 @@ body{
     text-decoration: none;
     z-index: 9999;
 }
+
+.wrapper {
+    overflow-x: clip;
+    position: relative;
+}
