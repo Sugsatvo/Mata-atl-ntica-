@@ -188,7 +188,7 @@ body{
 
 .florestas-cards {
     display: flex;
-    gap: 3rem;
+    justify-content: space-around;
     height: 200px;
 }
 
@@ -583,18 +583,65 @@ body{
 
 @media (max-width: 768px) {
     body{
-        border-left: 5px solid #004000;
-    }
-    .nav-botao {
-        font-size: clamp(5px, 2vw, 15px);
-        padding: 0.5rem 0.5rem;
-        min-height: 2.2rem;
+        border-left: 10px solid #004000;
     }
     .navbar {
-        width: 300px;
+        width: 90%;
+        min-width: unset;
+        overflow-x: auto;
+        justify-content: flex-start;
         gap: 2px;
         top: 1rem;
-        padding: 6px 10px;
-        height: 2rem;
-}
+    }
+    .nav-botao {
+        font-size: 10px;
+        padding: 0.3rem 0.5rem;
+        white-space: nowrap;
+    }
+    .capa-titulo{
+        font-size: 70px;
+    }
+    .titulo-introducao{
+        text-align: center;
+    }
+    .introduçao-foto{
+        display:none;
+    }
+    .introducao-conteudo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    #areas-cobertas {
+        flex-direction: column;
+    }
+    .areas-conteudo{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .areas-titulo{
+        text-align: center;
+    }
+    #areas-cobertas .areas-foto {
+        width: 90%;
+        height: 300px;
+        margin: 1rem auto;
+    }
+    #areas-cobertas .areas-conteudo {
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+    }
+    .florestas-cards{
+        flex-wrap: nowrap;
+        gap: 8px;
+        
+    }
 }
